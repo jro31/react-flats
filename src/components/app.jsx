@@ -26,7 +26,7 @@ class App extends Component {
     return (
       <div>
         <div className="flat-list">
-          <FlatList flats={this.state.flats} />
+          <FlatList flats={this.state.flats} selectProperty={this.selectProperty} />
         </div>
         <div className="map-container">
           <Map lat={this.state.lat} lng={this.state.lng} center={{lat: this.state.lat, lng: this.state.lng}} />
