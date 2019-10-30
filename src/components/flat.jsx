@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 
 class Flat extends Component {
   handleClick = () => {
-    {console.log('waddup')}
-    {console.log(this.props.selectProperty)}
     if (this.props.selectProperty) {
-      console.log('hello')
       this.props.selectProperty(this.props.lat, this.props.lng);
     }
   }
